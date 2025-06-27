@@ -10,9 +10,12 @@ async function startServer() {
   const server = new ApolloServer({
     typeDefs,
     resolvers,
+    persistedQueries: false, // ✅ Disables unbounded cache warning
   });
 
-  server.listen({ port: 4000 }).then(({ url }) => {
+  const PORT = process.env.PORT || 4000;
+
+  server.listen({ port: PORT }).then(({ url }) => {
     console.log(`🚀 Server ready at ${url}`);
   });
 }
