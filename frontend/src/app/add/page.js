@@ -66,7 +66,7 @@ export default function AddEmployeePage() {
   };
 
   return (
-<div className="flex justify-center px-4 pt-30
+    <div className="flex justify-center px-4 pt-30  ">
     <div className="w-full max-w-md bg-gray-800 text-gray-100 rounded-2xl shadow-lg p-6 sm:p-8 space-y-6">
 
         <h1 className="text-3xl font-bold text-center">Add New Employee</h1>
